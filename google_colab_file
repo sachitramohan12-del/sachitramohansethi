@@ -1,0 +1,342 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNg5WotjQJwCs73wGfnDb3/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sachitramohan12-del/sachitramohansethi/blob/main/google_colab_file\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uYpJXTaLJOfT",
+        "outputId": "d4478a3d-774f-4db5-f6a6-e7174ca16d40"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a\n",
+            "i\n",
+            "[-2]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#access string position\n",
+        "s = \"sachi\"\n",
+        "print(s[1])\n",
+        "print(s[-1])\n",
+        "print([-2])\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#slicing\n",
+        "s = \"sachi\"\n",
+        "print(s[0:3])\n",
+        "print(s[0:5:2])\n",
+        "print(s[::-1])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O7Fv7QT_KVJX",
+        "outputId": "30bcfe60-e5a5-4000-a88a-4e763ab1d532"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sac\n",
+            "sci\n",
+            "ihcas\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"sachitra\"\n",
+        "programming  = \"programming\"\n",
+        "print(name + programming, sep = \"+\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "77irzxijLAzy",
+        "outputId": "d153c0c5-85f9-438f-f59d-6f5a6fd2d484"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sachitraprogramming\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#search and check\n",
+        "x = \"python\"\n",
+        "print(x.find(\"tho\"))\n",
+        "print(x.find(\"red\"))\n",
+        "print(x.count(\"t\"))\n",
+        "print(x.startswith(\"py\"))\n",
+        "print(x.endswith(\"py\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GaZkGm1AN-tu",
+        "outputId": "aa308e3e-21d9-4c15-8031-de41ec905329"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "-1\n",
+            "1\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#string repeatation\n",
+        "a = \"*\"\n",
+        "print(a*7, sep = \"+\")\n",
+        "print(a*2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vVJUVPl3MP3y",
+        "outputId": "610f82e3-c24a-4735-e509-5f7d0cfe8c10"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "*******\n",
+            "**\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#case change\n",
+        "n = \"sachi\"\n",
+        "print(n.upper())\n",
+        "print(n.lower())\n",
+        "print(n.title())\n",
+        "print(n.swapcase())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TP6JxAwJN9DE",
+        "outputId": "c81f5ce7-fc27-4e5f-b205-e24f65faa893"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "SACHI\n",
+            "sachi\n",
+            "Sachi\n",
+            "SACHI\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = \"2\"\n",
+        "print(age.isdigit())\n",
+        "print(age.isdigit())\n",
+        "print(age.isalpha())\n",
+        "print(age.isalnum())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6AAXNXudQphg",
+        "outputId": "bbf07721-0924-401e-fc99-2e13ff55457f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "True\n",
+            "False\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"  f john   \"\n",
+        "print(name)\n",
+        "print(name.strip())\n",
+        "print(name.lstrip())\n",
+        "print(name.rstrip())\n",
+        "\n",
+        "print(name.replace(\"name\",\"age\"))\n",
+        "\n",
+        "\n",
+        "print(name.split())\n",
+        "print(name.split(\",\"))\n",
+        "\n",
+        "name2 = \"appleis, a fruit and banana is a fruit , fruitis good for health\"\n",
+        "print(name2.split(\",\"))\n",
+        "print(name2.split(\"is\"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DrXG1jcdYDGA",
+        "outputId": "db6a9bc5-35e3-4734-efa6-6a7e64de4e9b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "  f john   \n",
+            "f john\n",
+            "f john   \n",
+            "  f john\n",
+            "  f john   \n",
+            "['f', 'john']\n",
+            "['  f john   ']\n",
+            "['appleis', ' a fruit and banana is a fruit ', ' fruitis good for health']\n",
+            "['apple', ', a fruit and banana ', ' a fruit , fruit', ' good for health']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "text = \"python\"\n",
+        "print(text.center(20))\n",
+        "print(text.center(20, \"-\"))\n",
+        "print(text.ljust(10, \"-\"))\n",
+        "print(text.rjust(10, \"-\"))\n",
+        "print(text.zfill(7))\n",
+        "print(text.zfill(20))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XQ1Rt_14anqR",
+        "outputId": "4f98d657-8377-45b8-89b4-f1daeb35d122"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "       python       \n",
+            "-------python-------\n",
+            "python----\n",
+            "----python\n",
+            "0python\n",
+            "00000000000000python\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 22\n",
+        "# if age > 18 :\n",
+        "#   print(\"eligible\")\n",
+        "#else:\n",
+        "#   print(\"not\")\n",
+        "\n",
+        "print(\"eligible\") if age>18 else print(\"not eligible\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KhNNV_CFdR9r",
+        "outputId": "d866b5e5-ba68-4c3e-b1c6-93eb629aae2b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "eligible\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
